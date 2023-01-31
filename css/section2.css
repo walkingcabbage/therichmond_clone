@@ -1,0 +1,89 @@
+#main2 {
+  padding: 170px 0 100px;
+}
+
+.center {
+  text-align: center;
+  line-height: 4rem;
+}
+
+.center h4 {
+  font-size: 1.563rem;
+  color: #111;
+}
+
+.center h2 {
+  font-size: 2.813rem;
+  color: #111;
+  font-weight: bold;
+}
+
+.center p {
+  font-size: 1.063rem;
+  color: #777;
+}
+
+.p30 {
+  padding-bottom: 30px;
+}
+
+.p50 {
+  padding-bottom: 50px;
+}
+
+.fix-bg {
+  width: 100%;
+  height: 330px;
+  margin-top: 100px;
+  background-image: url(../img/main2-bg.jpg);
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1500px) {
+}
+@media screen and (max-width: 1024px) {
+  #main2 {
+    padding: 140px 20px 50px;
+  }
+  .p50 {
+    padding-bottom: 10px;
+  }
+  .p30 {
+    padding-bottom: 10px;
+  }
+
+  .center {
+    line-height: 2.3rem;
+  }
+  .center h4 {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .center .mobile {
+    display: block;
+  }
+
+  .center h2 {
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .center p {
+    font-size: 1rem;
+    line-height: 1.588em;
+  }
+
+  .center .p30:nth-child(2) {
+    line-height: 1.44em;
+    font-weight: 400;
+  }
+
+  .fix-bg {
+    margin-top: 40px;
+    height: 200px;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}

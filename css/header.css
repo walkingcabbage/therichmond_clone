@@ -1,0 +1,228 @@
+.w100 {
+  width: 100%;
+  padding: 0px 70px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  z-index: 9999;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  margin-left: 20px;
+}
+
+.mobile-menu span {
+  background-color: #111;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.mobile-menu span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.h-logo > a {
+  display: block;
+  width: 173px;
+  height: 50px;
+  background: url(../img/logo.png);
+}
+
+.h-nav {
+  height: 100%;
+}
+
+.h-nav__bg {
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  transition: height 0.5s;
+  box-sizing: border-box;
+}
+
+.h-nav:hover > .h-nav__bg {
+  /* height: 190px; */
+}
+
+.h-nav > ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.h-nav > ul > li {
+  padding: 0 30px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.lnb {
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+
+
+.lnb > li > a {
+  display: block;
+  padding: 10px 0;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.h-nav > ul > li > a {
+  font-size: 1rem;
+  color: #181c1c;
+  font-weight: 600;
+}
+
+.h-icons {
+  display: flex;
+}
+
+.h-call {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.call-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/tel.png) no-repeat center;
+}
+
+.call-text {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.h-insta a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #181c1c;
+  background-image: url(../img/header-right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 40px 8px 40px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    padding: 30px 40px;
+  }
+  .w100 {
+    padding: 0px 40px;
+  }
+  .h-nav > ul > li {
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .w100 {
+    padding: 0 20px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu i {
+    display: block;
+  }
+
+  .h-logo > a {
+    width: 126px;
+    height: 36px;
+    background-size: contain;
+    margin-left: 40px;
+  }
+
+  .h-nav {
+    display: none;
+  }
+  .call-text {
+    display: none;
+  }
+
+  .h-call {
+    margin-right: 0px;
+  }
+
+  .h-insta a {
+    background-color: transparent;
+    background-image: url(../img/insta-bl.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

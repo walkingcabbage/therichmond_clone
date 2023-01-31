@@ -1,0 +1,53 @@
+footer {
+  color: #666666;
+  text-align: center;
+  position: relative;
+}
+
+.footer-wrap {
+  background-color: #2a2d2e;
+  padding-top: 105px;
+  padding-bottom: 160px;
+}
+
+.footer-logo {
+  margin-bottom: 40px;
+}
+
+.p-top {
+  color: rgba(170, 171, 171, 0.5);
+  font-size: 0.75rem;
+  line-height: 1.667em;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.p-bottom {
+  color: rgba(170, 171, 171, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.714em;
+  margin-bottom: 35px;
+}
+
+.mobile {
+  display: none;
+}
+
+.footer-company span {
+  color: #aaabab;
+}
+
+.footer-company span ~ span {
+  margin-left: 25px;
+}
+
+.footer-company span strong {
+  font-size: 1.125rem;
+  margin-left: 10px;
+}
+
+.top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
